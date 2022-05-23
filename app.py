@@ -1,8 +1,8 @@
 import json
 import os
 import shutil
-from src.utils import generate_random_id, gzip_files, get_SHA256_hash
-from src.firebase_hosting import FirebaseHosting
+from .src.utils import generate_random_id, gzip_files, get_SHA256_hash
+from .src.firebase_hosting import FirebaseHosting
 from flask import Flask, request, render_template, redirect
 
 app = Flask(__name__)
