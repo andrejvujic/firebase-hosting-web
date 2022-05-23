@@ -10,3 +10,7 @@ Read more on the offical Firebase website, <a href="https://firebase.google.com/
 # Firebase Hosting Python library
 
 This project also takes advantage of the Python wrapper of the Firebase Hosting REST API written by Andrej Vujić.
+
+# Test the project
+
+This application is hosted on Heroku and it can be publicly tested <a href="https://firebase-hosting-web.herokuapp.com">here</a>.
