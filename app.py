@@ -8,7 +8,7 @@ from flask import Flask, request, render_template, redirect
 app = Flask(__name__)
 
 ROOT = os.path.dirname(__file__)
-UPLOAD_FOLDER = os.path.join(ROOT, "static", "files")
+UPLOAD_FOLDER = os.path.join(ROOT, "static")
 
 if not os.path.exists(UPLOAD_FOLDER):
     os.mkdir(UPLOAD_FOLDER)
