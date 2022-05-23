@@ -1,4 +1,3 @@
-import json
 import os
 import shutil
 from src.utils import generate_random_id, gzip_files, get_SHA256_hash
