@@ -1,5 +1,6 @@
 import json
 import os
+import pathlib
 import shutil
 from src.utils import generate_random_id, gzip_files, get_SHA256_hash
 from src.firebase_hosting import FirebaseHosting
@@ -8,8 +9,7 @@ from flask import Flask, request, render_template, redirect
 app = Flask(__name__)
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), "static", "files")
-if not os.path.exists(UPLOAD_FOLDER):
-    os.mkdir(UPLOAD_FOLDER)
+pathlib.Path(UPLOAD_FOLDER).mkdir(exist_ok=True)
 
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
